@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "tailwindcss": "^3.4.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "tailwindcss build -i ./tw-src/input.css -o ./views/css/style.css",
+    "build-css-w": "npx tailwindcss build -i ./src/input.css -o ./build/css/style.css --watch"
+  }
+}

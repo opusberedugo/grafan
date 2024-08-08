@@ -1,0 +1,162 @@
+@mixin media-max($width){
+  @media (max-width:$width) {
+    @content;
+  }
+}
+
+
+
+
+.text-white {
+  color: white;
+}
+
+nav {
+  .options {
+    a {
+      &:hover {
+        background-image:linear-gradient(
+          #ffcc80a8 0%,
+          #f27509a8 ,
+          // #e2160da8 100%,
+          // #0092e5a8 80%,
+          // #004593a8 100%, 
+          ), ;
+        color: white;
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+section.hero {
+  background-image: linear-gradient(
+    #ffcc80a8 0%,
+    #f27509a8 50%,
+    #e2160da8 100%,
+    // #0092e5a8 100%,
+    // #004593a8 100%, 
+    ),
+   url("../img/ant-rozetsky-SLIFI67jv5k-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+// .services{
+//   .grid{
+//     gap: 1.25rem;
+//   }
+// }
+
+section.wcu {
+  li {
+    list-style-image: url("../img/list-img.svg");
+    list-style-position: inside;
+    vertical-align: middle;
+    line-height: 20px;
+    list-style: none;
+    background: url(../img/list-img.svg) left center no-repeat;
+    padding-left: 25px;
+  }
+}
+
+section.values {
+  .top-left-accent {
+    position: relative;
+    padding: 2px;
+   
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 50%;
+      height: 50%;
+      border-left: 3px solid #05DBF2;
+      border-top: 3px solid #05DBF2;
+      border-radius: .5rem;
+      // background: linear-gradient(to bottom, #05DBF2, #05DBF2); 
+      z-index: -1;
+      @include media-max(1023px){
+        display: none;
+      }
+    }
+  }
+
+  .top-right-accent {
+    position: relative;
+    padding: 2px;
+   
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 50%;
+      height: 50%;
+      border-right: 3px solid #05DBF2;
+      border-top: 3px solid #05DBF2;
+      border-radius: .5rem;
+      // background: linear-gradient(to bottom, #05DBF2, #05DBF2); 
+      z-index: -1;
+      @include media-max(1023px){
+        display: none;
+      }
+    }
+  }
+
+  .bottom-right-accent {
+    position: relative;
+    padding: 2px;
+    @include media-max(1023){
+      display: none;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 50%;
+      height: 50%;
+      border-right: 3px solid #05DBF2;
+      border-bottom: 3px solid #05DBF2;
+      border-radius: .5rem;
+      // background: linear-gradient(to bottom, #05DBF2, #05DBF2); 
+      z-index: -1;
+      @include media-max(1023px){
+        display: none;
+      }
+    }
+  }
+
+  .bottom-left-accent {
+    position: relative;
+    padding: 2px;
+   
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 50%;
+      height: 50%;
+      border-left: 3px solid #05DBF2;
+      border-bottom: 3px solid #05DBF2;
+      border-radius: .5rem;
+      // background: linear-gradient(to bottom, #05DBF2, #05DBF2); 
+      z-index: -1;
+      @include media-max(1023px){
+        display: none;
+      }
+    }
+  }
+}
+
+section.services{
+  .grid{
+    background-color: green($color: #05daf2a8);
+  }
+}

@@ -1,0 +1,121 @@
+.text-white {
+  color: white;
+}
+
+nav .options a:hover {
+  background-image: linear-gradient(rgba(255, 204, 128, 0.6588235294) 0%, rgba(242, 117, 9, 0.6588235294));
+  color: white;
+  font-weight: 600;
+}
+
+section.hero {
+  background-image: linear-gradient(rgba(255, 204, 128, 0.6588235294) 0%, rgba(242, 117, 9, 0.6588235294) 50%, rgba(226, 22, 13, 0.6588235294) 100%), url("../img/ant-rozetsky-SLIFI67jv5k-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+section.wcu li {
+  list-style-image: url("../img/list-img.svg");
+  list-style-position: inside;
+  vertical-align: middle;
+  line-height: 20px;
+  list-style: none;
+  background: url(../img/list-img.svg) left center no-repeat;
+  padding-left: 25px;
+}
+
+section.values .top-left-accent {
+  position: relative;
+  padding: 2px;
+}
+section.values .top-left-accent::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 50%;
+  border-left: 3px solid #05DBF2;
+  border-top: 3px solid #05DBF2;
+  border-radius: 0.5rem;
+  z-index: -1;
+}
+@media (max-width: 1023px) {
+  section.values .top-left-accent::before {
+    display: none;
+  }
+}
+section.values .top-right-accent {
+  position: relative;
+  padding: 2px;
+}
+section.values .top-right-accent::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 50%;
+  border-right: 3px solid #05DBF2;
+  border-top: 3px solid #05DBF2;
+  border-radius: 0.5rem;
+  z-index: -1;
+}
+@media (max-width: 1023px) {
+  section.values .top-right-accent::before {
+    display: none;
+  }
+}
+section.values .bottom-right-accent {
+  position: relative;
+  padding: 2px;
+}
+@media (max-width: 1023) {
+  section.values .bottom-right-accent {
+    display: none;
+  }
+}
+section.values .bottom-right-accent::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 50%;
+  height: 50%;
+  border-right: 3px solid #05DBF2;
+  border-bottom: 3px solid #05DBF2;
+  border-radius: 0.5rem;
+  z-index: -1;
+}
+@media (max-width: 1023px) {
+  section.values .bottom-right-accent::after {
+    display: none;
+  }
+}
+section.values .bottom-left-accent {
+  position: relative;
+  padding: 2px;
+}
+section.values .bottom-left-accent::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50%;
+  height: 50%;
+  border-left: 3px solid #05DBF2;
+  border-bottom: 3px solid #05DBF2;
+  border-radius: 0.5rem;
+  z-index: -1;
+}
+@media (max-width: 1023px) {
+  section.values .bottom-left-accent::after {
+    display: none;
+  }
+}
+
+section.services .grid {
+  background-color: 218;
+}
+
+/*# sourceMappingURL=main.css.map */
