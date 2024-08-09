@@ -231,8 +231,7 @@
   <footer class="bg-black text-white p-6 flex md:justify-between items-center flex-col md:flex-row">
     <div class="flex md:justify-between items-center flex-col md:flex-row text-center md:text-left my-6">
       <img src="./img/logo.png" class="w-10 block mx-3 md:my-0" alt="">
-      <address class="block not-italic md:px-2 my-6 md:my-0">K/M 17 PH/Aba Express Road, Port Harcourt, Rivers State,
-        Nigeria.
+      <address class="block not-italic md:px-2 my-6 md:my-0">Flat 1, 545 Wherstead Road, Ipswitch, IP28LR.
       </address>
     </div>
     <div class="links flex items-center">
@@ -278,85 +277,7 @@
   
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-  <script>
-    let menuButton = document.querySelector(".nav-menu-button");
-    let menuOptions = document.querySelector("nav .options");
-  
-    menuButton.addEventListener("click", (e)=>{
-      menuOptions.classList.toggle("hidden");
-    })
-
-
-    document.getElementById('contactForm').addEventListener('submit', function(event) {
-      event.preventDefault();
-
-      const name = document.getElementById('name-label').value.trim();
-      const email = document.getElementById('email-label').value.trim();
-      const message = document.getElementById('message-input').value.trim();
-
-      // Simple validation
-      if (!name || !email || !message) {
-        Swal.fire({
-          icon: 'error',
-          title: 'All fields are required',
-          text: 'Please fill in all fields before submitting the form.'
-        });
-        return;
-      }
-
-      // Email validation regex
-      const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-      if (!emailPattern.test(email)) {
-        Swal.fire({
-          icon: 'error',
-          title: 'Invalid email address',
-          text: 'Please enter a valid email address.'
-        });
-        return;
-      }
-
-      // Send the form data using fetch
-      fetch('https://formsubmit.co/opusberedugo@gmail.com', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({
-          name: name,
-          email: email,
-          message: message,
-          _captcha: 'false', // Disable default captcha if you are not using it
-          _next: 'https://yourwebsite.com/thank-you.html'
-        })
-      })
-      .then(response => response.json())
-      .then(data => {
-        if (data.success) {
-          Swal.fire({
-            icon: 'success',
-            title: 'Message sent',
-            text: 'Your message has been sent successfully!'
-          });
-        } else {
-          Swal.fire({
-            icon: 'error',
-            title: 'Error',
-            text: 'There was an error sending your message. Please try again later.'
-          });
-        }
-      })
-      .catch(error => {
-        Swal.fire({
-          icon: 'error',
-          title: 'Error',
-          text: 'There was an error sending your message. Please try again later.'
-        });
-      });
-    });
-
-
-
-  </script>
+  <script src="./js/main.js"></script>
 </body>
 
 </html>

@@ -37,7 +37,7 @@ section.hero {
     // #0092e5a8 100%,
     // #004593a8 100%, 
     ),
-   url("../img/ant-rozetsky-SLIFI67jv5k-unsplash.jpg");
+   url("../img/datingscout-aRjjMWn_O84-unsplash.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -73,10 +73,9 @@ section.values {
       left: 0;
       width: 50%;
       height: 50%;
-      border-left: 3px solid #05DBF2;
-      border-top: 3px solid #05DBF2;
+      border-left: 3px solid #68abd8;
+      border-top: 3px solid #68abd8;
       border-radius: .5rem;
-      // background: linear-gradient(to bottom, #05DBF2, #05DBF2); 
       z-index: -1;
       @include media-max(1023px){
         display: none;
@@ -95,10 +94,9 @@ section.values {
       right: 0;
       width: 50%;
       height: 50%;
-      border-right: 3px solid #05DBF2;
-      border-top: 3px solid #05DBF2;
+      border-right: 3px solid #68abd8;
+      border-top: 3px solid #68abd8;
       border-radius: .5rem;
-      // background: linear-gradient(to bottom, #05DBF2, #05DBF2); 
       z-index: -1;
       @include media-max(1023px){
         display: none;
@@ -120,10 +118,9 @@ section.values {
       right: 0;
       width: 50%;
       height: 50%;
-      border-right: 3px solid #05DBF2;
-      border-bottom: 3px solid #05DBF2;
+      border-right: 3px solid #68abd8;
+      border-bottom: 3px solid #68abd8;
       border-radius: .5rem;
-      // background: linear-gradient(to bottom, #05DBF2, #05DBF2); 
       z-index: -1;
       @include media-max(1023px){
         display: none;
@@ -143,10 +140,9 @@ section.values {
       left: 0;
       width: 50%;
       height: 50%;
-      border-left: 3px solid #05DBF2;
-      border-bottom: 3px solid #05DBF2;
+      border-left: 3px solid #68abd8;
+      border-bottom: 3px solid #68abd8;
       border-radius: .5rem;
-      // background: linear-gradient(to bottom, #05DBF2, #05DBF2); 
       z-index: -1;
       @include media-max(1023px){
         display: none;
