@@ -3,7 +3,7 @@
 }
 
 nav .options a:hover {
-  background-image: linear-gradient(rgba(255, 204, 128, 0.6588235294) 0%, rgba(242, 117, 9, 0.6588235294));
+  background-color: #ffc801;
   color: white;
   font-weight: 600;
 }

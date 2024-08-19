@@ -18,7 +18,7 @@ module.exports = {
         skyblue: "#05DBF2",
         darkblue: "#033E8C",
         black:"#0D0D0D",
-        "lemon-chrome":"#ffcc80",
+        "lemon-chrome":"#ffc801",
         "tiger-orange":"#f27509",
         "fiery-red":"#e2160d",
         "scuba-blue": "#0092e5",

@@ -15,13 +15,7 @@ nav {
   .options {
     a {
       &:hover {
-        background-image:linear-gradient(
-          #ffcc80a8 0%,
-          #f27509a8 ,
-          // #e2160da8 100%,
-          // #0092e5a8 80%,
-          // #004593a8 100%, 
-          ), ;
+        background-color: #ffc801;
         color: white;
         font-weight: 600;
       }
